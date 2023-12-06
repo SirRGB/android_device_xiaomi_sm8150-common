@@ -163,6 +163,7 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := $(ALL_PARTITIONS)
 
 # Partitions - reserved size
+BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := true
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
 # Platform
