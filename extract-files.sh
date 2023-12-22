@@ -65,7 +65,7 @@ fi
 function blob_fixup() {
     case "${1}" in
         system_ext/lib64/libwfdservice.so)
-            "${PATCHELF}" --replace-needed "android.media.audio.common.types-V1-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
             ;;
         vendor/etc/init/init.mi_thermald.rc)
             sed -i "/seclabel u:r:mi_thermald:s0/d" "${2}"
