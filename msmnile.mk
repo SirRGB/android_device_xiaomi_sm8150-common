@@ -95,9 +95,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.msmnile \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    libaudioroute.vendor \
+    libprocessgroup.vendor \
+    libtinycompress
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
