@@ -1,0 +1,13 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Redirect 32-bit service to 64-bit service
+service wfdservice /system_ext/bin/wfdservice64
+    class main
+    user system
+    override
+    disabled
+    oneshot

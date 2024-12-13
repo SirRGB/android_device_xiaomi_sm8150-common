@@ -437,7 +437,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    wfdservice64.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
