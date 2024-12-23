@@ -130,11 +130,3 @@ prebuilt_etc {
     src: "etc/ueventd.qcom.rc",
     vendor: true,
 }
-
-prebuilt_etc {
-    name: "wfdservice64.rc",
-    filename: "wfdservice64.rc",
-    src: "etc/wfdservice64.rc",
-    sub_dir: "init",
-    system_ext_specific: true,
-}
