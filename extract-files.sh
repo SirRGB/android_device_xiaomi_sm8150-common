@@ -86,7 +86,7 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
-        system_ext/lib/libwfdnative.so|system_ext/lib64/libwfdnative.so)
+        system_ext/lib64/libwfdnative.so)
             [ "$2" = "" ] && return 0
             grep -q "libinput_shim.so" "${2}" || "${PATCHELF}" --add-needed "libinput_shim.so" "${2}"
             ;;
